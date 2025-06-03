@@ -10,11 +10,11 @@ The skeletal version of the website should look like this :
 
 ## The project was done in these steps below :
 
-- 0. README
-- 1. Header
-- 2. Banner
-- 3. Quote
-- 4. Videos
-- 5. Membership
-- 6. FAQ
-- 7. Footer
+- 0) README
+- 1) Header
+- 2) Banner
+- 3) Quote
+- 4) Videos
+- 5) Membership
+- 6) FAQ
+- 7) Footer

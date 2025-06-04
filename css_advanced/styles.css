@@ -1,0 +1,498 @@
+/* Fonts */
+
+@font-face {
+    font-family: "SourceSansPro Regular";
+    src: url(./resources/fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+    font-family: "SourceSansPro Light";
+    src: url(./resources/fonts/SourceSansPro-Light.otf);
+}
+
+@font-face {
+    font-family: "SourceSansPro Black";
+    src: url(./resources/fonts/SourceSansPro-Black.otf);
+}
+
+/* General */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "SourceSansPro Regular" , sans-serif;
+    background-image: url(./resources/images/background.png);
+    color: #ffffff;
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+h1 {
+    font-family: "SourceSansPro Light", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+h1 span {
+    font-family: "SourceSansPro Regular", sans-serif;
+    font-weight: 700;
+    color: #c271ff;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    background-color: #c271ff;
+    box-shadow: 0px 2px 20px 0px #00000080;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1,1);
+}
+
+/* Header */
+
+header {
+    width: 1100px;
+    height: 30px;
+    margin: 35px auto;
+}
+
+nav {
+    width: 235px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: 700;
+    height: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Banner */
+
+#Banner-title {
+    padding-top: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Banner-title h1 {
+    font-family: "SourceSansPro Black" , sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 150px;
+}
+
+#Banner-title p {
+    width: 300px;
+    font-family: "SourceSansPro Black";
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+#Banner-pros {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Banner-pros h2 {
+    font-family: "SourceSansPro Light" , sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+#Banner-pros h2 span {
+    font-family: "SourceSansPro Black" , sans-serif;
+    font-weight: 700;
+    color: #c271ff;
+}
+
+#pros {
+    width: 1000px;
+    margin-top: 125px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pros {
+    text-align: center;
+}
+
+.pros img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.pros h3 {
+    font-family: "SourceSansPro Black" , sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+}
+
+.pros i {
+    font-family: "SourceSansPro Light" , sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* Quote */
+
+#quote {
+    width: 100%;
+    height: 400px;
+    background-color: #c271ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quote-container {
+    width: 900px;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#quote-container img {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+
+.quote-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.quote-text blockquote {
+    font-family: "SourceSansPro Light" , sans-serif;
+    font-weight: 400;
+}
+
+.quote-text p {
+    font-weight: 700;
+}
+
+.quote-text i {
+    font-family: "SourceSansPro Light" , sans-serif;
+    font-weight: 500;
+}
+
+/* Videos */
+
+#videos {
+    width: 100%;
+    margin: auto;
+    padding: 75px;
+    color: #071629;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+#videos h1 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+#smile-videos {
+    padding: 75px 75px 0 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.single-video {
+    width: 255px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video {
+    position: relative;
+    cursor: pointer;
+}
+
+.video img {
+    display: block;
+    border-radius: 5px 5px 0 0;
+}
+
+.video::after {
+    content: url("./resources/images/play.png");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    transform: translate(-50%, -50%);
+}
+
+.single-video h2 {
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.single-video p {
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+    color: #848a93;
+}
+
+.video-pro {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.video-pro img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.video-pro h3 {
+    margin-left: 15px;
+    font-family: "SourceSansPro Light", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #c271ff;
+}
+
+.video-rating {
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-rating p {
+    font-family: "SourceSansPro Light", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #c271ff;
+}
+
+/* Membership */
+
+#membership {
+    width: 100%;
+    height: 500px;
+    padding: 75px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #071629;
+}
+
+#member {
+    padding: 75px 0 60px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.member {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.member p {
+    width: 200px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* FAQ */
+
+#FAQ {
+    padding: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #071629;
+    background-color: #ffffff;
+}
+
+#FAQ h1 {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 75px;
+}
+
+#FAQ-box {
+    width: 900px;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 75px;
+}
+
+.raw-block {
+    display: flex;
+    gap: 220px;
+}
+
+.item-block {
+    width: 350px;
+}
+
+.item-block h2 {
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.item-block p {
+    font-family: "SourceSansPro Light", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #848a93;
+}
+
+/* Footer */
+
+#footer {
+    width: 100%;
+    height: 250px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #071629;
+}
+
+#footer p {
+    font-family: "SourceSansPro Light", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #848a93;
+}
+
+.footer-logo {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-apps {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-apps a {
+    transition: 0.2s ease-in-out;
+}
+
+.footer-apps a:hover {
+    transform: scale(1,1);
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff;
+    cursor: pointer;
+}

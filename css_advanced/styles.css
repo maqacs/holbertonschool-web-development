@@ -416,13 +416,13 @@ nav a:hover {
     width: 900px;
     margin-top: 75px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 75px;
 }
 
-.raw-block {
+.row-block {
     display: flex;
     gap: 220px;
 }
